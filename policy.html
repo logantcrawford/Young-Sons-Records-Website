@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200|Open+Sans+Condensed:700" rel="stylesheet">
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+        <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        <title>Young Sons Records | Policy</title>
+    </head>
+    <body>
+        <div class="navbar__container" id="navbar__container">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="img/young-sons-logo-white.png" alt="Young Sons Records" class="navbar__logo" id="navbar__logo" style="height: 2rem;">
+                    </a>
+                    <button class="navbar-toggler" id="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="app_controller.ctrl_nav_toggle()">
+                        <span class="navbar__icon" id="navbar__icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto w-100 justify-content-end">
+                            <li class="nav-item" id="nav-item--1">
+                                <a class="nav-link" id="nav-link--1" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item" id="nav-item--2">
+                                <a class="nav-link" id="nav-link--2" href="index.html#section__artists">Artists</a>
+                            </li>
+                            <li class="nav-item" id="nav-item--3">
+                                <a class="nav-link" id="nav-link--3" href="index.html#section__about">What We Do</a>
+                            </li>
+                            <li class="nav-item" id="nav-item--4">
+                                <a class="nav-link" id="nav-link--4" href="#section__contact">Contact Us</a>
+                            </li>
+                            <li class="nav-item" id="nav-item--5">
+                                <a class="nav-link" id="nav-link--5" href="about.html">About Us</a>
+                            </li>
+                            <li class="nav-item" id="nav-item--6">
+                                <a class="nav-link" id="nav-link--6" href="https://youtu.be/nEvqHXbYxEo">On Youtube</a>
+                            </li>                            
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <button class="navbar__filter navbar__filter--closed" id="navbar__filter" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="app_controller.ctrl_nav_toggle()">
+        </button>
+        <main> 
+            <header class="header" id="header" header-change="0">
+            </header>
+            <section class="section__about" id="section__about">
+                <div class="about">
+                    <div class="about__row">
+                        <div class="row row-small">
+                            <div class="about__image about__image--3 about__image--large"></div>
+                        </div>                        
+                    </div>
+                    <div class="about__row">
+                        <div class="row row-small">
+                            <div class="about__text">
+                                <div class="heading-tertiary u-margin-bottom-small">Interested in information about our Contract? Check out some of the main points.</div>
+                                <div class="about__paragraph u-margin-bottom-small">
+                                    1. In agreeing to this contract the Client agrees that Young Sons Records will own the Masters of recorded songs. Extending to inclusions of any performances recorded in the studio. This contract will also serve as permission for Young Sons Records to use Client names, musician names, and photographs in future advertisements. Young Sons Records will allow Clients to use, distribute, and control their content.
+                                </div>
+                                <div class="about__paragraph u-margin-bottom-small">
+                                    2. The Client agrees that any obligations, contracts, or agreements before signing this agreement will not interfere with carrying out this agreement to its full intent and purpose. It is understood and agreed that Young Sons Records will be allowed to terminate and cancel this agreement without liability to Client with or without cause.
+                                </div>
+                                <div class="about__paragraph u-margin-bottom-small">
+                                    3. The client agrees that there is no copyrighted material in any pre-recorded content that may be used in the final Master. This includes samples, melodies, lyrics, or anything with illegitimate nature. Young Sons Records will not be responsible for receiving permission for use of copyrighted material unless otherwise stated. And will not be held responsible for any repercussions that may occur from the use of copyrighted material.   
+                                </div>
+                                <div class="about__paragraph u-margin-bottom-small">
+                                    4. Young Sons Records will not release recording files or copies of Clients or Client’s representative until all monies due to the engineer and producer have been paid. If not paid within 30 days, the Client’s recording files left on premises shall become the property of Young Sons Records. Upon complete payment of all monies due by Client, the engineer will transfer all recordings and copyrights to the client if applicable. All songwriting copyrights will remain with the author of the work.
+                                </div>
+                                <div class="about__paragraph u-margin-bottom-small">
+                                    5. If Clients must cancel sooner than 36 hours before their session they are required to pay one half of their estimated session time for the canceled day. This fee is required to be paid before receiving the masters of any songs. 
+                                </div>
+                                <div class="about__paragraph u-margin-bottom-small">
+                                    6. If a recording engineer at Young Sons Records must cancel a session due to illness or other reasonable cause, the engineer will reschedule the session for the earliest available time consistent with the needs of the Client.
+                                </div>
+                                <div class="about__paragraph u-margin-bottom-small">
+                                    7. Recording time included setup time, break downtime, and any breaks taken by the Client(s) or engineer. The engineer will be allowed a break of up to 15 minutes every 2 hours. The engineer will be allowed one 30 minute meal break per session every 4 hours. Engineer’s 15-minute breaks will be on the clock, while the 30-minute meal break will be off the clock. The client may leave premises or take any breaks but must pay Young Sons Records for all hourly work.
+                                </div>
+                                <div class="about__paragraph u-margin-bottom-small">
+                                    8. Young Sons Records shall endeavor to secure all property left on premises by Client, but is not responsible for loss due to theft, fire, or other occurrences beyond its control.
+                                </div>
+                                <div class="about__paragraph u-margin-bottom-small">
+                                    9. The Client shall be responsible for any loss or damage of Young Sons Records property of any kind incurred by Client, employees of Client, guests of Clent, or agents of Clent, as a result of misuse, negligence, and or carelessness. The client will be fined for the price of product or equivalent and be required to pay fine before receiving masters.
+                                </div>
+                                <div class="about__paragraph u-margin-bottom-small">
+                                    10. Client and all guests of Client will be respectful and visibly sober during their session, no horseplay, foul play, snooping, explicit behavior, destruction, or substance abuse of any kind on the premises. Client and all guests of Client will remain in the studio, living area, kitchen, bathroom, or any place outside of Young Sons Records. Young Sons Records reserves the right to reject, remove anyone who violates any laws or rules in this contract for any reason. 
+                                </div>
+                                <div class="about__paragraph u-margin-bottom-small">
+                                    There is more to our contract, so if you want more information, please send us an email. 
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>                 
+                </div>   
+            </section>       
+            <section class="section__contact" id="section__contact">
+                <div class="contact__block">
+                    <div class="row row-small">
+                        <div class="col-1-of-2">
+                            <div class="contact">
+                                <div class="contact__text">
+                                    <h3 class="contact__heading heading-secondary">Let's Get in Touch</h3>
+                                    <p class="contact__paragraph">
+                                        Drop us an email with your contact information and the subject filled out. At Young Sons Records, we Mix, Master, and Produce if you have any questions about business or collaborations feel free to send us a message. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1-of-2">
+                            <div class="contact">
+                                <div class="contact__form">
+                                    <form action="https://formspree.io/xvobykwn" method="POST" class="form">
+                                        <div class="form__group form__group--small">
+                                            <input name="first_name" type="text" class="form__input first_name" placeholder="First Name" id="first_name" required>
+                                            <label for="first_name" class="form__label">First Name</label>
+                                        </div>
+                                        <div class="form__group form__group--small">
+                                            <input name="last_name" type="text" class="form__input last_name" placeholder="Last Name" id="last_name" required>
+                                            <label for="last_name" class="form__label">Last Name</label>
+                                        </div>
+                                        <div class="form__group form__group--large">
+                                            <input name="email" type="email" class="form__input email" placeholder="Email Address" id="email" required>
+                                            <label for="email" class="form__label">Email Address</label>
+                                        </div>
+                                        <div class="form__group form__group--large">
+                                            <label for="message" class="form__label--textarea">Your message</label>
+                                            <textarea name="message" class="form__input--textarea message" id="message" rows="6" required></textarea>
+                                        </div>  
+                                        <div class="form__group--small">
+                                            <button class="btn btn--purple-2 submit" id="send-contact" type="submit">
+                                                Send Message
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer" id="footer">
+            <div class="row row-small">
+                <div class="col-1-of-3">
+                    <div class="footer__title">
+                        About Us
+                    </div>
+                    <div class="footer__navigation">
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="#section__contact" class="footer__link">Work With Us</a></li>
+                            <li class="footer__item"><a href="about.html" class="footer__link">About Us</a></li>
+                            <li class="footer__item"><a href="index.html#section__about" class="footer__link">Services</a></li>
+                            <li class="footer__item"><a href="policy.html" class="footer__link">Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="footer__title">
+                        Social Feed
+                    </div>
+                    <div class="footer__feed">
+                        <ul class="footer__list">
+                            <li class="footer__instagram-item footer__instagram-item--1">
+                                <div class="footer__text footer__title--1" id="footer__title--1">Is an alarm clock an instrument? Yeh it do - Full video in bio! - - - - - - - - #rock #guitar #music #metal #systemofadown #vocals #yeah #gibson @systemofadown @gibsonguitar</div>
+                                <a href="#" class="footer__instagram-link footer__instagram-link--1 btn-text btn-text--white btn-text--snall" id="footer__link--1">View on Instagram &rarr;</a>
+                            </li>
+                            <li class="footer__instagram-item footer__instagram-item--2">
+                                <div class="footer__text footer__title--2" id="footer__title--2">This Thursday available everywhere April 30th Max is dropping the first Yong Sons Records album. Make sure to check it out when it drops! - - - - #folk #music #breedloveguitars #breedlove #newmusic #new #quarantinelife #recordingstudio #recordingartist</div>
+                                <a href="#" class="footer__instagram-link footer__instagram-link--2 btn-text btn-text--white btn-text--snall" id="footer__link--2">View on Instagram &rarr;</a>
+                            </li>
+                            <li class="footer__instagram-item footer__instagram-item--3">
+                                <div class="footer__text footer__title--3" id="footer__title--3">
+                                    Message me if you're interested in getting recordings or studio time after the quarantine! 🎸🎶🔥 Coming up on YouTube is a metal guitar mixing tutorial soon.</div>
+                                <a href="#" class="footer__instagram-link footer__instagram-link--3 btn-text btn-text--white btn-text--snall" id="footer__link--3">View on Instagram &rarr;</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="footer__title">
+                        Follow Us
+                    </div>
+                    <div class="footer__social">
+                        <a href="https://www.instagram.com/waydecrawford/" class="social-btn">
+                            <ion-icon class="logo logo-instagram" name="logo-instagram"></ion-icon>
+                        </a>
+                        <a href="#button" class="social-btn">
+                            <ion-icon class="logo logo-youtube" name="logo-youtube"></ion-icon>
+                        </a>                        
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row row-small">
+                <div class="footer__copyright u-right-text">
+                    &copy;
+                    <span class="footer__date--year">%Year%</span>
+                    <a href="https://www.blue-pencil.app" class="footer__copyright-link">blue pencil</a>. Coded by
+                    <a href="https://www.logantcrawford.com/" class="footer__copyright-link">Logan Crawford</a>.
+                </div>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="./js/index.js" type="text/javascript"></script>
+    </body>
+</html>
