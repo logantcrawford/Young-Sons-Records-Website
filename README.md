@@ -1,2 +1,11 @@
-# young_sons_records_website
-At Young Sons Records, we offer fast and affordable music production work, specializing in stringed instruments and hip hop. In addition to what we specialize in, we also experiment and dip into other genres as well. Per request, we also have connections to do videos.
+# Young Sons Records Website
+
+![Young Sons Records Hero](hero.jpg)
+
+Young Sons Records offers fast and affordable music production work, specializing in stringed instruments and hip hop.
+
+[View the Young Sons Website now.](https://www.youngsonsrecords.com/)
+
+[Young Sons Website (alt Github URL).](https://logantcrawford.github.io/Young-Sons-Records-Website/)
+
+
